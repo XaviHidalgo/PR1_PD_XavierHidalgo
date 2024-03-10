@@ -104,7 +104,7 @@ FRECUENCIA aprox 0,6 us (1/0,6 MHz)
 
 
 5. Generar un informe fichero informe.MD ( markdown ) donde se muestre el codigo, un diagrama de
-flujo y un diagrama de tiempos
+flujo
 
 ```mermaid
 graph TD;
