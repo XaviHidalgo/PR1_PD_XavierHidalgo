@@ -108,13 +108,17 @@ flujo y un diagrama de tiempos
 
 ```mermaid
 sequenceDiagram
+    LED->>Encendido: Encender LED
+    Encendido->>LED: Encender
+    LED-->>Encendido: Confirmación
     loop LED_ON_OFF
-        Note over LED: Encender
-        LED->>+Arduino: Encender LED
-        Arduino->>+LED: Encender
-        Note over LED: Apagar
-        LED->>+Arduino: Apagar LED
-        Arduino->>+LED: Apagar
-        Note right of LED: Esperar 1 segundo
+        LED->>Apagado: Apagar LED
+        Apagado->>LED: Apagar
+        LED-->>Apagado: Confirmación
+        Apagado-->>Esperar: Esperar 1 segundo
+        LED->>Encendido: Encender LED
+        Encendido->>LED: Encender
+        LED-->>Encendido: Confirmación
+        Encendido-->>Esperar: Esperar 1 segundo
     end
 ```
