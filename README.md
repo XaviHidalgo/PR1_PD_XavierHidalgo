@@ -108,9 +108,9 @@ flujo y un diagrama de tiempos
 
 ```mermaid
 graph TD;
-    LED((LED)) --> Encendido{Encendido};
-    Encendido --> Apagar;
-    Apagar --> LED;
+    inicio[Iniciar pin 23 como salida del MP] --> Encender;
+    Encender --> Esperar[Esperar 1 segundo];
+    Esperar --> Apagar;
     Apagar --> Esperar[Esperar 1 segundo];
-    Esperar --> Encendido;
+    Esperar --> Encender;
 ```
