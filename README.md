@@ -13,6 +13,9 @@ iunicialización del puerto serie y el envio cada vez que cambia el estado del l
     - apagar led
     - sacar por puesto serie mensaje OFF
     - espera de 1000 milisegundos
+
+PROGRAMA:
+
 ``` cpp
 #include <Arduino.h>
 
@@ -38,7 +41,7 @@ el osciloscopio cual es la màxima frecuencia de apagado encendido que permite e
 Medir la frecuencia en estos cuatro casos:
 - Con el envio por el puerto série del mensaje i utilizando las funciones de Arduino
 
-**PROGRAMA (loop):**
+PROGRAMA (loop):
   ``` cpp
   void loop() {
      digitalWrite(led, HIGH);   // turn the LED on
@@ -48,10 +51,10 @@ Medir la frecuencia en estos cuatro casos:
     }
 
   ```
-**FRECUENCIA aprox 50 us (1/50 MHz)**
+FRECUENCIA aprox 50 us (1/50 MHz)
 - Con el envio por el puerto série y accedirendo directamente a los registros
 
-**PROGRAMA (loop):**
+PROGRAMA (loop):
   ``` cpp
   uint32_t *gpio_out = (uint32_t *)GPIO_OUT_REG;
   
@@ -63,10 +66,10 @@ Medir la frecuencia en estos cuatro casos:
     }
 
   ```
-**FRECUENCIA aprox 50 us (1/50 MHz)**
+FRECUENCIA aprox 50 us (1/50 MHz)
 - Sin el envio por el puerto série del mensaje i utilizando las funciones de Arduino
 
-**PROGRAMA (loop):**
+PROGRAMA (loop):
   ``` cpp
   void loop() {
      digitalWrite(led, HIGH);   // turn the LED on
@@ -74,7 +77,7 @@ Medir la frecuencia en estos cuatro casos:
     }
 
   ```
-**FRECUENCIA aprox 0,6 us (1/0,6 MHz)**
+FRECUENCIA aprox 0,6 us (1/0,6 MHz)
 - Sin el envio por el puerto série y accedirendo directamente a los registros
 
 PROGRAMA (loop):
@@ -99,9 +102,10 @@ FRECUENCIA aprox 0,6 us (1/0,6 MHz)
     
 -En último lugar, no hemos sido capaces de ver diferencias de tiempo entre enviar la orden de encendido y apagado mediante funciones Arduino o accediendo directamente a los registros. Seguramente la haya pero no hemos sido capaces de detectarlas con el osciloscopio.
 
-```markdown
+
 ```mermaid
 graph TD;
     inicio --> paso1;
     paso1 --> paso2;
     paso2 --> fin;
+```
