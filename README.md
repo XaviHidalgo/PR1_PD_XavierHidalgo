@@ -108,7 +108,8 @@ flujo y un diagrama de tiempos
 
 ```mermaid
 graph TD;
-    iniciar pin 23 como salida del MP --> encender led;
-    esperar 1 segundo --> apagar led;
-    esperar 1 segundo --> encender led;
+    inicio --> condicion;
+    condicion -- Verdadero --> paso1;
+    paso1 --> condicion;
+    condicion -- Falso --> fin;
 ```
