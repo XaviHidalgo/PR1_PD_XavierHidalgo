@@ -107,18 +107,10 @@ FRECUENCIA aprox 0,6 us (1/0,6 MHz)
 flujo y un diagrama de tiempos
 
 ```mermaid
-sequenceDiagram
-    LED->>Encendido: Encender LED
-    Encendido->>LED: Encender
-    LED-->>Encendido: Confirmación
-    loop LED_ON_OFF
-        LED->>Apagado: Apagar LED
-        Apagado->>LED: Apagar
-        LED-->>Apagado: Confirmación
-        Apagado-->>Esperar: Esperar 1 segundo
-        LED->>Encendido: Encender LED
-        Encendido->>LED: Encender
-        LED-->>Encendido: Confirmación
-        Encendido-->>Esperar: Esperar 1 segundo
-    end
+graph TD;
+    LED((LED)) --> Encendido{Encendido};
+    Encendido --> Apagar;
+    Apagar --> LED;
+    Apagar --> Esperar[Esperar 1 segundo];
+    Esperar --> Encendido;
 ```
