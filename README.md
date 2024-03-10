@@ -103,9 +103,12 @@ FRECUENCIA aprox 0,6 us (1/0,6 MHz)
 -En último lugar, no hemos sido capaces de ver diferencias de tiempo entre enviar la orden de encendido y apagado mediante funciones Arduino o accediendo directamente a los registros. Seguramente la haya pero no hemos sido capaces de detectarlas con el osciloscopio.
 
 
+5. Generar un informe fichero informe.MD ( markdown ) donde se muestre el codigo, un diagrama de
+flujo y un diagrama de tiempos
+
 ```mermaid
 graph TD;
-    inicio --> paso1;
-    paso1 --> paso2;
-    paso2 --> fin;
+    iniciar pin 23 como salida del MP --> encender led;
+    esperar 1 segundo --> apagar led;
+    esperar 1 segundo --> encender led;
 ```
