@@ -77,7 +77,7 @@ Medir la frecuencia en estos cuatro casos:
 **FRECUENCIA aprox 0,6 us (1/0,6 MHz)**
 - Sin el envio por el puerto série y accedirendo directamente a los registros
 
-**PROGRAMA (loop):**
+PROGRAMA (loop):
   ``` cpp
   uint32_t *gpio_out = (uint32_t *)GPIO_OUT_REG;
 
@@ -87,7 +87,7 @@ Medir la frecuencia en estos cuatro casos:
     }
 
   ```
-**FRECUENCIA aprox 0,6 us (1/0,6 MHz)**
+FRECUENCIA aprox 0,6 us (1/0,6 MHz)
 
 
 
