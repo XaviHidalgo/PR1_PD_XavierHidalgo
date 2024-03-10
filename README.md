@@ -103,7 +103,7 @@ FRECUENCIA aprox 0,6 us (1/0,6 MHz)
 -En último lugar, no hemos sido capaces de ver diferencias de tiempo entre enviar la orden de encendido y apagado mediante funciones Arduino o accediendo directamente a los registros. Seguramente la haya pero no hemos sido capaces de detectarlas con el osciloscopio.
 
 
-5. Generar un informe fichero informe.MD ( markdown ) donde se muestre el codigo, un diagrama de
+5. Generar un informe fichero informe.MD ( markdown ) donde se muestre el codigo y un diagrama de
 flujo
 
 ```mermaid
