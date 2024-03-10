@@ -90,13 +90,13 @@ Medir la frecuencia en estos cuatro casos:
 **FRECUENCIA aprox 0,6 us (1/0,6 MHz)**
 
 
-CONCLUSIÓN:
+**CONCLUSIÓN:**
 
-    -En el primer y segundo experimento el tiempo de apagado y encendido es mucho mayor que en los dos siguentes, lógicamente es debido a que el MP tiene que enviar los mensajes de ON y OFF por el puerto série, hecho que ralentza la ejecucuión de la orden de apagado o encendido.
+-En el primer y segundo experimento el tiempo de apagado y encendido es mucho mayor que en los dos siguentes, lógicamente es debido a que el MP tiene que enviar los mensajes de ON y OFF por el puerto série, hecho que ralentza la ejecucuión de la orden de apagado o encendido.
     
-    -El tercer y cuarto experimento son muy interesantes ya que el MP solo debe ejecutar las ordenes de encendido y apagado del led. Son interesantes ya que de esta forma podemos calcular el tiempo que tarda el MP en ejecutar dichas ordenes. Evidentenmente el MP tarda distinto tiempo en ejecutar distintas ordenes; no es lo mismo ejecutar una orden para encender un led que una que envie un mensaje por el puerto série. Así que con estos experimentos simplemente vemos el tiempo las ordenes de encendido y apagado del led.
+-El tercer y cuarto experimento son muy interesantes ya que el MP solo debe ejecutar las ordenes de encendido y apagado del led. Son interesantes ya que de esta forma podemos calcular el tiempo que tarda el MP en ejecutar dichas ordenes. Evidentenmente el MP tarda distinto tiempo en ejecutar distintas ordenes; no es lo mismo ejecutar una orden para encender un led que una que envie un mensaje por el puerto série. Así que con estos experimentos simplemente vemos el tiempo las ordenes de encendido y apagado del led.
     
-    -En último lugar, no hemos sido capaces de ver diferencias de tiempo entre enviar la orden de encendido y apagado mediante funciones Arduino o accediendo directamente a los registros. Seguramente la haya pero no hemos sido capaces de detectarlas con el osciloscopio.
+-En último lugar, no hemos sido capaces de ver diferencias de tiempo entre enviar la orden de encendido y apagado mediante funciones Arduino o accediendo directamente a los registros. Seguramente la haya pero no hemos sido capaces de detectarlas con el osciloscopio.
 
 ```markdown
 ```mermaid
