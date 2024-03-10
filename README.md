@@ -14,7 +14,7 @@ iunicialización del puerto serie y el envio cada vez que cambia el estado del l
     - sacar por puesto serie mensaje OFF
     - espera de 1000 milisegundos
 
-PROGRAMA:
+# PROGRAMA:
 
 ``` cpp
 #include <Arduino.h>
