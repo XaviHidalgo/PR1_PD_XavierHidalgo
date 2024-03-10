@@ -90,7 +90,7 @@ Medir la frecuencia en estos cuatro casos:
 **FRECUENCIA aprox 0,6 us (1/0,6 MHz)**
 
 
-**CONCLUSIÓN: **
+CONCLUSIÓN:
 
     -En el primer y segundo experimento el tiempo de apagado y encendido es mucho mayor que en los dos siguentes, lógicamente es debido a que el MP tiene que enviar los mensajes de ON y OFF por el puerto série, hecho que ralentza la ejecucuión de la orden de apagado o encendido.
     
