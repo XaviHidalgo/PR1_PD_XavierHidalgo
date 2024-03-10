@@ -107,9 +107,14 @@ FRECUENCIA aprox 0,6 us (1/0,6 MHz)
 flujo y un diagrama de tiempos
 
 ```mermaid
-graph TD;
-    inicio --> condicion;
-    condicion -- Verdadero --> paso1;
-    paso1 --> condicion;
-    condicion -- Falso --> fin;
+sequenceDiagram
+    loop LED_ON_OFF
+        Note over LED: Encender
+        LED->>+Arduino: Encender LED
+        Arduino->>+LED: Encender
+        Note over LED: Apagar
+        LED->>+Arduino: Apagar LED
+        Arduino->>+LED: Apagar
+        Note right of LED: Esperar 1 segundo
+    end
 ```
